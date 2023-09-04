@@ -40,10 +40,10 @@ public class NotificationWorker extends Worker {
         String city=d.getString("city");
         getWeather(city, isNotified -> {
             if(isNotified) {
-                MainActivity.StartWorker(city, 20);
+                MainActivity.StartWorker(city, 43200);
             }
             else {
-                MainActivity.StartWorker(city, 10);
+                MainActivity.StartWorker(city, 10800);
             }
 
         });

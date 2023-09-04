@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -33,7 +32,7 @@ public static final int NOTIFICATION_ID=101;
             else
             {
 
-                StartWorker(editText.getText().toString(),2);
+                StartWorker(editText.getText().toString(),3);
                 Toast.makeText(getApplicationContext(),"You will receive notifications regarding tomorrow's weather for city "+editText.getText().toString(),Toast.LENGTH_LONG).show();
 
 
